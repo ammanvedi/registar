@@ -1,0 +1,116 @@
+body  {
+  height: 100vh;
+  margin: 0;
+}
+
+.registar {
+  font-size: 50px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  background: #f9f9f7;
+  border: 33px solid white;
+  box-sizing: border-box;
+  position: relative;
+
+  &__section {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY( 100vh );
+
+    &--in {
+        animation-name: section-page-in;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+
+    &--out {
+        animation-name: section-page-out;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+
+    &--primary {
+
+    }
+
+    &--secondary {
+
+    }
+  }
+
+  &__next {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      position: absolute;
+    left: 50%;
+    bottom: 40px;
+    background-color: #222;
+    border-radius: 100%;
+    cursor: pointer;
+      &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 53%;
+          left: 50%;
+          width: 50%;
+          height: 50%;
+          transform: translateX(-50%) translateY(-50%) rotateZ(90deg);;
+          background-image: url( './svg/right-arrow.svg' );
+      }
+  }
+
+  &__section-title {
+      display: block;
+      opacity: 0.3;
+      margin-bottom: 3px;
+  }
+
+  &__input {
+    display: inline;
+    vertical-align: text-top;
+    font-size: 1em;
+    line-height: 1em;
+    max-width: 300px;
+    border: none;
+  }
+
+
+  &__question {
+
+  }
+
+  &__element-wrap {
+    height: 100%;
+    font-size: $font-size;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: 600;
+    animation-name: section-in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    line-height: 3rem;
+    color: $text-primary;
+    padding: 0 2rem;
+    height: auto;
+    top: 50%;
+    position: relative;
+    display: block;
+    transform: translateY( -50% );
+    padding: 2rem;
+    border-radius: 5px;
+    line-height: 3.5rem;
+    max-width: 800px;
+    user-select: none;
+
+  }
+}

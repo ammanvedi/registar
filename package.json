@@ -1,0 +1,25 @@
+{
+  "name": "registar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammanvedi/registar.git"
+  },
+  "author": "amman.vedi@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ammanvedi/registar/issues"
+  },
+  "homepage": "https://github.com/ammanvedi/registar#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

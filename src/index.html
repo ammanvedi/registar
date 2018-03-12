@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Registar</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="registar.css" ></link>
+  </head>
+  <body>
+
+    <form class="registar js-registar">
+      <section class="registar__section js-section registar__section--in">
+        <div class="registar__element-wrap">
+            <span class="registar__section-title" >Tell us about yourself...</span>
+          My name is
+          <span class="registar-input registar-input--text js-registar-input" data-type="text" contenteditable="true" data-placeholder="first" data-pattern="\w+" ></span>
+          <span class="registar-input registar-input--text js-registar-input" data-type="text" contenteditable="true" data-placeholder="last" data-pattern="\w+" ></span>.
+          I am a
+          <span class="registar-input registar-input--select js-registar-input-select">
+              <span class="js-select-current"></span>
+              <select class="js-select-element" placeholder="choose" >
+                  <option disabled selected value="select" >choose</option>
+                <option value="male" >male</option>
+                <option value="female" >female</option>
+                <option value="female" >prefer not to say</option>
+              </select>
+          </span>
+
+          who is
+          <span class="registar-input registar-input--text js-registar-input" data-type="text" contenteditable="true" data-placeholder="age" data-pattern="\d+" ></span>
+          years old.
+          Im living in
+          <span class="registar-input registar-input--select js-registar-input-select">
+              <span class="js-select-current"></span>
+              <select class="js-select-element" placeholder="country">
+                  <option disabled selected value="select" >country</option>
+                <option value="c1" >country</option>
+                <option value="c2" >country longer</option>
+              </select>
+          </span>
+
+        </div>
+      </section>
+      <section class="registar__section js-section">
+        <div class="registar__element-wrap">
+          My email is
+          <span class="registar-input registar-input--text js-registar-input" data-type="email" contenteditable="true" data-placeholder="me@example.com" data-pattern="\w+" ></span>,
+          id like my password to be
+          <span class="registar-input registar-input--text js-registar-input" data-type="password" contenteditable="true" data-placeholder="******" data-pattern="\w+" ></span>
+        </div>
+      </section>
+      <div class="registar__next js-next"></div>
+    </form>
+    <script src="./main.js" type="text/javascript"></script>
+  </body>
+
+</html>
